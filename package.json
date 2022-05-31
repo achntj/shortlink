@@ -5,35 +5,31 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
-    "@prisma/client": "3.14.0",
-    "@trpc/client": "^9.23.6",
-    "@trpc/next": "^9.23.6",
-    "@trpc/react": "^9.23.6",
-    "@trpc/server": "^9.23.6",
+    "@prisma/client": "^3.14.0",
+    "@trpc/client": "^9.23.2",
+    "@trpc/next": "^9.23.2",
+    "@trpc/react": "^9.23.2",
+    "@trpc/server": "^9.23.2",
     "classnames": "^2.3.1",
     "copy-to-clipboard": "^3.3.1",
     "lodash": "^4.17.21",
+    "nanoid": "^3.3.4",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0",
-    "zod": "^3.17.3"
+    "zod": "^3.16.0"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.2",
     "@types/lodash": "^4.14.182",
-    "@types/node": "^17.0.36",
+    "@types/node": "^17.0.32",
     "@types/react": "18.0.9",
-    "@types/react-dom": "18.0.5",
     "autoprefixer": "^10.4.7",
-    "eslint": "8.16.0",
-    "eslint-config-next": "12.1.6",
-    "postcss": "^8.4.14",
-    "prisma": "3.14.0",
+    "postcss": "^8.4.13",
+    "prisma": "^3.14.0",
     "tailwindcss": "^3.0.24",
-    "typescript": "4.7.2"
+    "typescript": "4.6.4"
   }
 }
