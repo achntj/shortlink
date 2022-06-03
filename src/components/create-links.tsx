@@ -32,21 +32,22 @@ const CreateLinkForm: NextPage = () => {
   if (createSlug.status === "success") {
     return (
       <>
-        <div className="flex justify-center items-center">
-          <h1 className="mb-0">{`${url}/${form.slug}`}</h1>
-          <input
-            type="button"
-            value="Copy Link"
-            className="rounded bg-cyan-500 py-1.5 px-1 font-bold cursor-pointer ml-2"
-            onClick={() => {
-              copy(`${url}/${form.slug}`);
-            }}
-          />
+        <div className="sm:flex justify-center items-center">
+          <h3 className="mb-0">{`${url}/${form.slug}`}</h3>
         </div>
         <input
           type="button"
+          value="Copy Link"
+          className="rounded bg-cyan-500 py-1.5 px-1 font-bold cursor-pointer m-5 hover:bg-cyan-600 active:bg-cyan-700"
+          onClick={() => {
+            copy(`${url}/${form.slug}`);
+          }}
+        />
+
+        <input
+          type="button"
           value="Create More!"
-          className="rounded bg-cyan-500 py-1.5 px-1 font-bold cursor-pointer m-5"
+          className="rounded bg-cyan-500 py-1.5 px-1 font-bold cursor-pointer m-5 hover:bg-cyan-600 active:bg-cyan-700"
           onClick={() => {
             createSlug.reset();
             setForm({ slug: "", url: "" });
