@@ -65,14 +65,25 @@ const CreateLinkForm: NextPage = () => {
           createSlug.mutate({ ...form });
         }}
       >
-        <h1>Petite URL</h1>
+        <h1 className="text-xl sm:text-4xl my-0">URL Shortener</h1>
+        <h2 className="text-base sm:text-xl mt-0">
+          Created by{" "}
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://achintyajha.com/"
+            className="text-pink-600"
+          >
+            Achintya.
+          </a>
+        </h2>
         {slugCheck.data?.used && (
           <span className="font-medium text-center text-red-500">
             <code className="text-white">{form.slug}</code> is taken, please try
             something else.
           </span>
         )}
-        <div className="flex items-center">
+        <div className="sm:flex items-center">
           <span className="font-medium mr-2">Slug</span>
           <input
             type="text"
@@ -92,7 +103,7 @@ const CreateLinkForm: NextPage = () => {
             required
           />
         </div>
-        <div className="flex items-center">
+        <div className="sm:flex items-center">
           <span className="font-medium mr-2">Link</span>
           <input
             type="url"
